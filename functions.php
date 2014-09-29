@@ -3,7 +3,7 @@
 namespace DevHub;
 
 
-if ( !defined( 'WPORGPATH' ) ) {
+if ( !defined( 'WPORGPATH' ) && !is_admin() ) {
 	$message = '<h3>You have not configured the <code>"WPORGPATH"</code> variable.</h3>';
 	$message .= '<p><a href="https://make.wordpress.org/docs/handbook/developer-resources/devhub/">Click here '
 		.'to visit the devhub documentation for instructions</a> for defining and downloading the .org header '
